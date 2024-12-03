@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <style>
+      body {
+        font-family: "Barlow", sans-serif;
+        margin: 0;
+      }
+
+      header {
+        -border: 1px solid red;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .menu {
+        -border: 1px solid;
+        box-sizing: border-box;
+        margin-left: 100px;
+        padding-top: 18px;
+      }
+
+      .menu ul {
+        display: flex;
+      }
+      .menu ul li {
+        padding: 10px;
+        list-style: none;
+      }
+
+      .menu ul li a {
+        color: #415161;
+        -font-family: "Barlow", sans-serif;
+        text-decoration: none;
+        font-family: "Barlow", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        -letter-spacing: 1px;
+      }
+
+      .logo {
+        -border: 1px solid green;
+        box-sizing: border-box;
+        padding-top: 10px;
+      }
+
+      .logo2 {
+        -border: 1px solid red;
+        box-sizing: border-box;
+        padding-top: 40px;
+        color: red;
+        font-weight: bold;
+      }
+      .fa-basket-shopping {
+        font-size: 18px;
+        color: red;
+      }
+      .box {
+        position: relative;
+        top: -20px;
+        left: -8px;
+        border: 1px solid red;
+        padding: 2px 5px;
+        font-size: 12px;
+        border-radius: 50%;
+        background-color: red;
+        box-shadow: 0px 0px 2px silver;
+        color: white;
+      }
+
+      .dropdown li a {
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        -border: 1px solid red;
+        box-sizing: border-box;
+        padding-bottom: 30px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        min-width: 250px;
+        padding: 8px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin-top: 30px;
+        border: 1px solid rgba(192, 192, 192, 0.468);
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/site-logo-free-img-1.png" alt="" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#" title="color">HOME</a></li>
+          <li><a href="#">ALL PRODUCTS</a></li>
+          <li><a href="#">TSHIRTS</a></li>
+          <li><a href="#">MUGS</a></li>
+          <li><a href="#">ABOUT HDX</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <div class="dropdown">
+            <li>
+              <a href="#"
+                >ACCOUNT
+                <i class="fa-solid fa-chevron-down" style="font-size: 10px"></i>
+              </a>
+            </li>
+            <div class="dropdown-content">
+              <a href="#">MY ACCOUNT</a>
+              <a href="#">CART</a>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="logo2">
+        <bdi>
+          <span class="one">£0.00</span>
+        </bdi>
+        <span class="icon">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span class="box">0</span>
+        </span>
+      </div>
+    </header>
+  </body>
+</html>
